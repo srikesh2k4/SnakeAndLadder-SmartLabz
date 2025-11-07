@@ -1,3 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System;
+using SnakeAndLadder.uc;
 
-Console.WriteLine("Hello, World!");
+namespace SnakeAndLadder;
+
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Features features = new Features();
+    }
+}
