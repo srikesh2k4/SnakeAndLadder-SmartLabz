@@ -2,6 +2,12 @@ namespace SnakeAndLadder.uc;
 
 public class Features
 {
+    public static int DiceValue()
+    {
+        Random random = new Random();
+        int diceValue = random.Next(1,6);
+        return diceValue;
+    }
     public static void Uc1()
     {
         //creating a board
@@ -45,12 +51,19 @@ public class Features
             {64,83}
         };
         //initial position at 0
-        int person1Position = 0;
-        Console.WriteLine($"Person 1 position is {person1Position}");
+        Dictionary<int, int> playersPosition = new Dictionary<int, int>()
+        {
+            { 1, 0 }
+        };
+        
+        //adding dice
+        Console.WriteLine(DiceValue());
+
+
     }
     
     public Features()
     {
-         Uc1();
+        Uc1();
     }
 }
