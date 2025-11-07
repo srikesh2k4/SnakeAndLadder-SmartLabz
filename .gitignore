@@ -195,4 +195,4 @@ test-results/
 *.seed
 *.pid.lock
 *.orig
-*.rej
+
