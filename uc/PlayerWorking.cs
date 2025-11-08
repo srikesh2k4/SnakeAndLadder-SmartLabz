@@ -8,9 +8,11 @@ public class PlayerWorking
         {
             { 1, 0 }
         };
+        int diceRollCount = 0;
         while (  playersPosition[1] != 100)
         {
             int diceValue = DiceRoll.DiceValue();
+            diceRollCount++;
             Console.WriteLine($"Player at position {playersPosition[1]} ");
             Console.Write($" Dice roll at position 0 {diceValue} ");
             if (diceValue == 1 || diceValue == 6)
@@ -20,6 +22,7 @@ public class PlayerWorking
                 while (playersPosition[1] != 100)
                 {
                     int diceValueAfterStarted = DiceRoll.DiceValue();
+                    diceRollCount++;
                     Console.Write($" Throws Again Dice {diceValueAfterStarted} ");
                     int temp = playersPosition[1];
                     playersPosition[1] += diceValueAfterStarted;
@@ -46,7 +49,9 @@ public class PlayerWorking
                     if (playersPosition[1] == 100)
                     {
                         Console.WriteLine("Player won");
+                        Console.WriteLine($"Total Number of dice throwed => {diceRollCount}");
                         break;
+                        
                     }
                 }
             }
