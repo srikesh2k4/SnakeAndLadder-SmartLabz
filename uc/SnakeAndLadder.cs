@@ -1,8 +1,27 @@
 namespace SnakeAndLadder.uc;
 
-public class Ladder
+public class SnakeAndLadder
 {
-    public static void LadderCreate()
+    public static Dictionary<int, int> snakes = new Dictionary<int, int>()
+    {
+        { 45, 7 },
+        { 38, 20 },
+        { 97, 61 },
+        { 91, 73 },
+        { 51, 10 },
+        { 65, 54 }
+
+    };
+    public static Dictionary<int, int> ladder = new Dictionary<int, int>()
+    {
+        { 5, 58 },
+        { 14, 49 },
+        { 53, 72 },
+        { 75, 94 },
+        { 42, 60 },
+        { 64, 83 }
+    };
+    public static void BoardCreate()
     {
         //creating a board
         int[,] board = new int[10, 10];
@@ -28,24 +47,7 @@ public class Ladder
         }
 
         //creating ladder and snake
-        Dictionary<int, int> snakes = new Dictionary<int, int>()
-        {
-            { 45, 7 },
-            { 38, 20 },
-            { 97, 61 },
-            { 91, 73 },
-            { 51, 10 },
-            { 65, 54 }
 
-        };
-        Dictionary<int, int> ladder = new Dictionary<int, int>()
-        {
-            { 5, 58 },
-            { 14, 49 },
-            { 53, 72 },
-            { 75, 94 },
-            { 42, 60 },
-            { 64, 83 }
-        };
+
     }
 }
