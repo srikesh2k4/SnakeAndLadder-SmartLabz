@@ -49,8 +49,6 @@ public class PlayerWorking
                     if (playersPosition[1] == 100)
                     {
                         Console.WriteLine("Player won");
-                        Console.WriteLine($"Total Number of dice throwed => {diceRollCount}");
-                        break;
                         
                     }
                 }
