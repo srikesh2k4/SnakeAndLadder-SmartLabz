@@ -7,7 +7,10 @@ public class Features
     public Features()
     {
        // Ladder.LadderCreate();
-      //  DiceRoll.DiceValue();
-      PlayerWorking playerWorking = new PlayerWorking();
+         //  DiceRoll.DiceValue();
+
+       
+      
+     PlayerWorking playerWorking = new PlayerWorking();
     }
 }
