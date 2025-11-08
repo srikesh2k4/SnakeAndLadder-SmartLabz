@@ -43,6 +43,7 @@ public class PlayerWorking
                         playersPosition[1] = frontPositionOfLadder;
                     }
                     Console.WriteLine($"Player position is {playersPosition[1]}");
+                    //winning condition
                     if (playersPosition[1] == 100)
                     {
                         Console.WriteLine("Player won");
